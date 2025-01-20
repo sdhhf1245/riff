@@ -13,6 +13,8 @@ like a guitar riff, but worse...
 <p>set up a new window for your ui.</p>
 
 ```lua
+local riff = loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhhf1245/riff/refs/heads/main/riff.lua"))()
+
 local win = riff:Create({
     Name = "riff" -- window name
 })
@@ -86,6 +88,10 @@ plr:Section({
 <h3 align="left">complete example</h3>
 
 ```lua
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local riff = loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhhf1245/riff/refs/heads/main/riff.lua"))() 
+
 local win = riff:Create({
     Name = "riff"
 })
@@ -128,7 +134,6 @@ plr:Dropdown({
         
     end
 })
-
 ```
 
 <p>make an issue to request a feature and i'll add it</p>
